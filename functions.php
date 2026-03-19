@@ -78,12 +78,12 @@ function mytheme_card_widget_assets()
 
 	wp_register_style(
 		'mytheme-card-widget',
-		get_template_directory_uri() . '/assets/css/card-widget.css'
+		get_stylesheet_directory_uri() . '/elementor-widgets/assets/css/card-widget.css'
 	);
 
 	wp_register_script(
 		'mytheme-card-widget',
-		get_template_directory_uri() . '/assets/js/card-widget.js',
+		get_stylesheet_directory_uri() . '/elementor-widgets/assets/js/card-widget.js',
 		['jquery'],
 		false,
 		true

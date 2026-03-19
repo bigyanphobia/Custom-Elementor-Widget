@@ -1,16 +1,42 @@
+:root {
+  --card-bg-color: #ffffff;
+  --card-border-color: #dddddd;
+  --card-text-color: #333333;
+
+  --card-padding: 16px;
+  --card-radius: 8px;
+
+  --card-title-margin: 12px;
+  --card-description-margin: 8px;
+
+  --card-hover-translate: -5px;
+  --card-transition: 0.3s ease;
+}
+
 .mytheme-card {
-  border: 1px solid #ddd;
-  padding: 16px;
-  border-radius: 8px;
+  background-color: var(--card-bg-color);
+  border: 1px solid var(--card-border-color);
+  padding: var(--card-padding);
+  border-radius: var(--card-radius);
   text-align: center;
-  transition: transform 0.3s ease;
+  transition: transform var(--card-transition);
 }
 
 .mytheme-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(var(--card-hover-translate));
 }
 
-.mytheme-card img {
+.mytheme-card__image img {
   max-width: 100%;
-  border-radius: 6px;
+  border-radius: var(--card-radius);
+}
+
+.mytheme-card__title {
+  color: var(--card-text-color);
+  margin-top: var(--card-title-margin);
+}
+
+.mytheme-card__description {
+  color: var(--card-text-color);
+  margin-top: var(--card-description-margin);
 }
