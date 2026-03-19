@@ -1,0 +1,22 @@
+# OS Generated Files
+.DS_Store
+Thumbs.db
+*.swp
+
+# Build Tools & Dependencies
+# (Add these if you use npm/yarn for your widget's assets)
+node_modules/
+dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# WordPress & Editor Specific
+wp-config.php
+.idea/
+.vscode/
+*.log
+
+# Elementor/Build Artifacts
+/assets/js/*.map
+/assets/css/*.map
